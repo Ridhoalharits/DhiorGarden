@@ -27,7 +27,13 @@ function App() {
 	return (
 		<div>
 			<div className="App">
-				<CardStatus suhu={posts.Kelembaban} pump={posts.status_pompa} />
+				<CardStatus
+					suhu={posts.Kelembaban}
+					pump={posts.status_pompa}
+					air_temp={posts.suhu}
+					air_humid={posts.udara}
+					water_level={posts.level_air}
+				/>
 			</div>
 			<div className="Row-base"></div>
 		</div>

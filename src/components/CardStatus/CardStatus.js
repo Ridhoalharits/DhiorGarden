@@ -22,15 +22,15 @@ function CardStatus(props) {
 					<p className="text-status">Pump Status</p>
 				</div>
 				<div className="component">
-					<p className="detail-text-status">15</p>
+					<p className="detail-text-status">{props.air_temp}</p>
 					<p className="text-status">Air Temp</p>
 				</div>
 				<div className="component">
-					<p className="detail-text-status">20</p>
+					<p className="detail-text-status">{props.air_humid}</p>
 					<p className="text-status">Air Humid</p>
 				</div>
 				<div className="component">
-					<p className="detail-text-status">20</p>
+					<p className="detail-text-status">{props.water_level}</p>
 					<p className="text-status">Water Level</p>
 				</div>
 			</div>
