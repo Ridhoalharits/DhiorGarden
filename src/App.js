@@ -30,8 +30,8 @@ function App() {
 				<CardStatus
 					suhu={posts.Kelembaban}
 					pump={posts.status_pompa}
-					air_temp={posts.suhu}
-					air_humid={posts.udara}
+					air_temp={posts.Suhu}
+					air_humid={posts.Udara}
 					water_level={posts.level_air}
 				/>
 			</div>
