@@ -1,6 +1,5 @@
 import CardStatus from "./components/CardStatus/CardStatus";
 import React, { useState, useEffect } from "react";
-import SwitchCard from "./components/SwitchCard/SwitchCard";
 import "./App.css";
 function App() {
 	const endpoint =
