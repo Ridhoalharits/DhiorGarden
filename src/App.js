@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CardStatus from "./components/CardStatus/CardStatus";
+import React, { useState, useEffect } from "react";
+import SwitchCard from "./components/SwitchCard/SwitchCard";
+import "./App.css";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const endpoint =
+		"https://miot-dhior-default-rtdb.asia-southeast1.firebasedatabase.app/monitor.json";
+	const [posts, setPosts] = useState([]);
+
+	useEffect(() => {
+		const fetchData = () => {
+			fetch(endpoint)
+				.then((response) => response.json())
+
+				.then(({ data }) => {
+					console.log(data);
+					setPosts(data);
+				})
+				.catch((error) => console.error("Error fetching data:", error));
+		};
+		const intervalId = setInterval(fetchData, 500);
+
+		return () => {
+			clearInterval(intervalId);
+		};
+	}, []);
+
+	return (
+		<div>
+			<div className="App">
+				<CardStatus suhu={posts.Kelembaban} />
+			</div>
+			<div className="Row-base"></div>
+		</div>
+	);
 }
 
 export default App;
