@@ -13,7 +13,7 @@ function CardStatus(props) {
 					<p className="text-status">Soil Humidity</p>
 				</div>
 
-				<img src="./icons/humIcon.svg" />
+				<img src=".\icons\humICon.svg" />
 			</div>
 			<div className="line" />
 			<div className="status">
