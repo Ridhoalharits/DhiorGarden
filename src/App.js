@@ -28,7 +28,7 @@ function App() {
 	return (
 		<div>
 			<div className="App">
-				<CardStatus suhu={posts.Kelembaban} />
+				<CardStatus suhu={posts.Kelembaban} pump={posts.status_pompa} />
 			</div>
 			<div className="Row-base"></div>
 		</div>

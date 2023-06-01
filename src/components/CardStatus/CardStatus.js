@@ -18,7 +18,7 @@ function CardStatus(props) {
 			<div className="line" />
 			<div className="status">
 				<div className="component">
-					<p className="detail-text-status">ON</p>
+					<p className="detail-text-status">{props.pump}</p>
 					<p className="text-status">Pump Status</p>
 				</div>
 				<div className="component">
