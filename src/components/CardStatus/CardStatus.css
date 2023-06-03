@@ -9,7 +9,7 @@
 }
 
 .card {
-	width: 400px;
+	display: inline-block;
 	height: 200px;
 	background-color: #bff205;
 	border-radius: 20px;
@@ -55,4 +55,16 @@
 	text-align: left;
 	margin-top: 4px;
 	text-align: left;
+}
+
+.component {
+	display: inline-block;
+	margin-right: 32px;
+}
+
+.satuan {
+	font-family: "Avenir-Regular";
+	font-size: 40px;
+	text-align: left;
+	margin: 0px;
 }
