@@ -8,8 +8,6 @@ function App() {
 		const databaseURL =
 			"https://miot-dhior-default-rtdb.asia-southeast1.firebasedatabase.app"; // Replace with your Firebase project URL
 
-		// Data to be sent
-
 		fetch(`${databaseURL}/monitor/data.json`, {
 			method: "PATCH",
 			headers: {
