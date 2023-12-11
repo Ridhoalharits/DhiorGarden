@@ -67,6 +67,7 @@ function App() {
 					air_temp={posts.Suhu}
 					air_humid={posts.Udara}
 					water_level={posts.level_air}
+					GarageLED={posts.GarageLED}
 				/>
 			</div>
 			<div className="Row-base">

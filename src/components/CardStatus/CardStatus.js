@@ -42,6 +42,13 @@ function CardStatus(props) {
 					</p>
 					<p className="text-status">Water Level</p>
 				</div>
+				<div className="component">
+					<p className="detail-text-status">
+						{props.GarageLED}
+						<span className="satuan"></span>
+					</p>
+					<p className="text-status">Lamp Status</p>
+				</div>
 			</div>
 		</div>
 	);
