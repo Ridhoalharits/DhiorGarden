@@ -1,5 +1,6 @@
 import CardStatus from "./components/CardStatus/CardStatus";
 import React, { useState, useEffect } from "react";
+import Button from "@mui/material/Button";
 
 import "./App.css";
 function App() {
@@ -56,8 +57,6 @@ function App() {
 		};
 	}, []);
 
-	const handleClick = console.log("Tombol ditekan");
-
 	return (
 		<div>
 			<div className="App">
@@ -71,8 +70,10 @@ function App() {
 				/>
 			</div>
 			<div className="Row-base">
-				<button onClick={sendOne}>ON</button>
-				<button onClick={sendZero}>OFF</button>
+				<Button variant="contained" onClick={sendOne}>
+					ON
+				</Button>
+				<Button onClick={sendZero}>OFF</Button>
 			</div>
 		</div>
 	);
